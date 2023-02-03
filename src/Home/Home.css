@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(185, 203, 219);
+}
+
+.Home__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.Home__column1 {
+  background-color: white;
+  padding: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.Home__column1 h2 {
+  text-shadow: 0.5px 1px 0.5px gray;
+}
+
+.Home__column1 p {
+  font-size: 20px;
+}
+
+.Home__column2 {
+  color: white;
+  background-color: rgb(54, 131, 205);
+  padding: 62px 35px;
+  border-radius: 0% 3% 3% 0% / 2% 5% 5% 0%;
+}
+
+.Home__column2 h3 {
+  text-shadow: 1px 0.5px 0.1px gray
+}
+
+.Home__column2 p {
+  font-size: 18px;
+}
+
+.Home__column2__Currency {
+  margin-top: 30px;
+}
+
+.Home__column2__Currency  label {
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 0.5px 0.1px rgba(128, 128, 128, 0.473)
+}
+
+.Home__column2__Currency select {
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  width: 50%;
+  cursor: pointer;
+}
+
+.Home__btn {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
