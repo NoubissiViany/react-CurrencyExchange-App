@@ -2,7 +2,9 @@
 import React from 'react';
 import Logo from '../Assets/Images/logo.png';
 import './Home.css';
-import Btn from '../Component/Button';
+import Btn1 from '../Buttons/Button1';
+import Btn2 from '../Buttons/Button2';
+import Btn3 from '../Buttons/Button3';
 
 function Home() {
   return (
@@ -25,7 +27,7 @@ function Home() {
         <p>I am here to help you exchange money</p>
         <div>
           <div className="Home__column2__Currency">
-            <label htmlFor="">Default Currency: </label>
+            <label htmlFor="">Select Default Currency: </label>
             <select name="" id="">
               <option selected value="USD">
                 USD
@@ -35,9 +37,9 @@ function Home() {
             </select>
           </div>
           <div className="Home__btn">
-            <Btn text="Add Currency" />
-            <Btn text="Deposite Money" />
-            <Btn text="Convert Currency" />
+            <Btn1 />
+            <Btn2 />
+            <Btn3 />
           </div>
         </div>
       </div>
