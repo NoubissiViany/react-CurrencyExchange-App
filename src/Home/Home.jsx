@@ -16,24 +16,26 @@ function Home() {
 
   useEffect(() => {
     if (select === undefined) {
-      const defaultCurrency = `${
-        currency2 * 1.07 + currency3 * 0.0016 + currency1
-      } USD`;
+      const defaultCurrency = `${(
+        currency2 * 1.07 +
+        currency3 * 0.0016 +
+        currency1
+      ).toFixed(2)} USD`;
       setTotalCurrency(defaultCurrency);
     } else if (select === 'USD') {
       const amount2 = currency2 * 1.07;
       const amount3 = currency3 * 0.0016;
-      const total = `${amount2 + amount3 + currency1} USD`;
+      const total = `${(amount2 + amount3 + currency1).toFixed(2)} USD`;
       setTotalCurrency(total);
     } else if (select === 'EUR') {
       const amount1 = currency1 * 0.93;
       const amount3 = currency3 * 0.0015;
-      const total = `${amount1 + amount3 + currency2} EUR`;
+      const total = `${(amount1 + amount3 + currency2).toFixed(2)} EUR`;
       setTotalCurrency(total);
     } else {
       const amount1 = currency1 * 610.76;
       const amount2 = currency2 * 655.76;
-      const total = `${amount1 + amount2 + currency3} XAF`;
+      const total = `${(amount1 + amount2 + currency3).toFixed(2)} XAF`;
       setTotalCurrency(total);
     }
   });
