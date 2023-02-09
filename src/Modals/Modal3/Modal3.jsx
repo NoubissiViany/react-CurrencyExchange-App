@@ -27,56 +27,56 @@ function Modal({ setIsOpen }) {
     if (
       value.fromCurrency === 'USD' &&
       value.toCurrency === 'EUR' &&
-      value.amount <= currency1
+      +value.amount <= currency1
     ) {
-      const val = currency1 - value.amount;
+      const val = currency1 - +value.amount;
       setCurrency1(val);
-      setCurrency2((currency2 + value.amount * 0.93).toFixed(2));
+      setCurrency2((currency2 + +value.amount * 0.93).toFixed(2));
       setIsOpen(false);
     } else if (
       value.fromCurrency === 'USD' &&
       value.toCurrency === 'XAF' &&
-      value.amount <= currency1
+      +value.amount <= currency1
     ) {
-      const val = currency1 - value.amount;
+      const val = currency1 - +value.amount;
       setCurrency1(val);
-      setCurrency3((currency3 + value.amount * 610.76).toFixed(2));
+      setCurrency3((currency3 + +value.amount * 610.76).toFixed(2));
       setIsOpen(false);
     } else if (
       value.fromCurrency === 'EUR' &&
       value.toCurrency === 'USD' &&
-      value.amount <= currency2
+      +value.amount <= currency2
     ) {
-      const val = currency2 - value.amount;
+      const val = currency2 - +value.amount;
       setCurrency2(val);
-      setCurrency1((currency1 + value.amount * 1.07).toFixed(2));
+      setCurrency1((currency1 + +value.amount * 1.07).toFixed(2));
       setIsOpen(false);
     } else if (
       value.fromCurrency === 'EUR' &&
       value.toCurrency === 'XAF' &&
-      value.amount <= currency2
+      +value.amount <= currency2
     ) {
-      const val = currency2 - value.amount;
+      const val = currency2 - +value.amount;
       setCurrency2(val);
-      setCurrency3((currency3 + value.amount * 655.76).toFixed(2));
+      setCurrency3((currency3 + +value.amount * 655.76).toFixed(2));
       setIsOpen(false);
     } else if (
       value.fromCurrency === 'XAF' &&
       value.toCurrency === 'USD' &&
-      value.amount <= currency3
+      +value.amount <= currency3
     ) {
-      const val = currency3 - value.amount;
+      const val = currency3 - +value.amount;
       setCurrency3(val);
-      setCurrency1((currency1 + value.amount * 0.0016).toFixed(2));
+      setCurrency1((currency1 + +value.amount * 0.0016).toFixed(2));
       setIsOpen(false);
     } else if (
       value.fromCurrency === 'XAF' &&
       value.toCurrency === 'EUR' &&
-      value.amount <= currency3
+      +value.amount <= currency3
     ) {
-      const val = currency3 - value.amount;
+      const val = currency3 - +value.amount;
       setCurrency3(val);
-      setCurrency2((currency2 + value.amount * 0.0015).toFixed(2));
+      setCurrency2((currency2 + +value.amount * 0.0015).toFixed(2));
       setIsOpen(false);
     } else {
       alert(
