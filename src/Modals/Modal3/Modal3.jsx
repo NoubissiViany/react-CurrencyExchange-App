@@ -82,7 +82,6 @@ function Modal({ setIsOpen }) {
       alert(
         'The amount is greater than your balance or the selected currencies are the same'
       );
-      setIsOpen(false);
     }
   };
   return (
