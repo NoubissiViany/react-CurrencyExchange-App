@@ -7,7 +7,7 @@ function Button() {
   return (
     <div>
       <button onClick={() => setIsOpen(true)} className="Btn" type="button">
-        Convert Currency
+        Transfer Money
       </button>
       {isOpen && <Modal setIsOpen={setIsOpen} />}
     </div>
