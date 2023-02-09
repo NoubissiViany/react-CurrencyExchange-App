@@ -31,7 +31,7 @@ function Modal({ setIsOpen }) {
     ) {
       const val = currency1 - +value.amount;
       setCurrency1(val);
-      setCurrency2((currency2 + +value.amount * 0.93).toFixed(2));
+      setCurrency2(currency2 + +value.amount * 0.93);
       setIsOpen(false);
     } else if (
       value.fromCurrency === 'USD' &&
@@ -40,7 +40,7 @@ function Modal({ setIsOpen }) {
     ) {
       const val = currency1 - +value.amount;
       setCurrency1(val);
-      setCurrency3((currency3 + +value.amount * 610.76).toFixed(2));
+      setCurrency3(currency3 + +value.amount * 610.76);
       setIsOpen(false);
     } else if (
       value.fromCurrency === 'EUR' &&
@@ -49,7 +49,7 @@ function Modal({ setIsOpen }) {
     ) {
       const val = currency2 - +value.amount;
       setCurrency2(val);
-      setCurrency1((currency1 + +value.amount * 1.07).toFixed(2));
+      setCurrency1(currency1 + +value.amount * 1.07);
       setIsOpen(false);
     } else if (
       value.fromCurrency === 'EUR' &&
@@ -58,7 +58,7 @@ function Modal({ setIsOpen }) {
     ) {
       const val = currency2 - +value.amount;
       setCurrency2(val);
-      setCurrency3((currency3 + +value.amount * 655.76).toFixed(2));
+      setCurrency3(currency3 + +value.amount * 655.76);
       setIsOpen(false);
     } else if (
       value.fromCurrency === 'XAF' &&
@@ -67,7 +67,7 @@ function Modal({ setIsOpen }) {
     ) {
       const val = currency3 - +value.amount;
       setCurrency3(val);
-      setCurrency1((currency1 + +value.amount * 0.0016).toFixed(2));
+      setCurrency1(currency1 + +value.amount * 0.0016);
       setIsOpen(false);
     } else if (
       value.fromCurrency === 'XAF' &&
@@ -76,7 +76,7 @@ function Modal({ setIsOpen }) {
     ) {
       const val = currency3 - +value.amount;
       setCurrency3(val);
-      setCurrency2((currency2 + +value.amount * 0.0015).toFixed(2));
+      setCurrency2(currency2 + +value.amount * 0.0015);
       setIsOpen(false);
     } else {
       alert(
