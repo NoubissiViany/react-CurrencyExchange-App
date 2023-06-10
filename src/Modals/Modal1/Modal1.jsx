@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -37,13 +36,17 @@ function Modal({ setIsOpen }) {
           </button>
           <form onSubmit={handelSubmit}>
             <div className="modalContentsContainer">
-              <label htmlFor="">Name:</label>
-              <input
-                name="currency"
-                placeholder="Please enter currency name"
-                type="text"
-              />
+              <label htmlFor="name">
+                Name:
+                <input
+                  id="name"
+                  name="currency"
+                  placeholder="Please enter currency name"
+                  type="text"
+                />
+              </label>
             </div>
+
             <div className="actionsContainer">
               <button type="submit" className="saveBtn">
                 Add

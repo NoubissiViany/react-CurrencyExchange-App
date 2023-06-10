@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-no-constructed-context-values */
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useEffect, useState } from 'react';
 import Logo from '../Assets/Images/logo.png';
 import './Home.css';
@@ -76,12 +75,14 @@ function Home() {
           </p>
           <div>
             <div className="Home__column2__Currency">
-              <label htmlFor="">Select Default Currency: </label>
-              <select onChange={handelSelect}>
-                <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
-                <option value="XAF">XAF</option>
-              </select>
+              <label htmlFor="currency">
+                Select Default Currency:
+                <select onChange={handelSelect} id="currency">
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="XAF">XAF</option>
+                </select>
+              </label>
             </div>
             <div className="Home__btn">
               <Btn2 />

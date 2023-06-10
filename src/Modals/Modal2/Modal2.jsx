@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/prop-types */
@@ -52,25 +51,30 @@ function Modal({ setIsOpen }) {
             </button>
             <div className="modalContents">
               <div>
-                <label className="modalContentLabel" htmlFor="">
+                <label className="modalContentLabel" htmlFor="amount">
                   Amount:
+                  <input
+                    id="amount"
+                    name="amount"
+                    className="modalContentInput"
+                    placeholder="Please enter the amount"
+                    type="number"
+                  />
                 </label>
-                <input
-                  name="amount"
-                  className="modalContentInput"
-                  placeholder="Please enter the amount"
-                  type="number"
-                />
               </div>
               <div>
-                <label className="modalContentLabel" htmlFor="">
+                <label className="modalContentLabel" htmlFor="currency">
                   Select Currency:
+                  <select
+                    className="modalContentSelect"
+                    name="currency"
+                    id="currency"
+                  >
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="XAF">XAF</option>
+                  </select>
                 </label>
-                <select className="modalContentSelect" name="currency" id="">
-                  <option value="USD">USD</option>
-                  <option value="EUR">EUR</option>
-                  <option value="XAF">XAF</option>
-                </select>
               </div>
             </div>
             <div className="modalActions">

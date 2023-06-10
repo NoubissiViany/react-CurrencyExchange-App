@@ -1,5 +1,4 @@
 /* eslint-disable no-alert */
-/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -102,32 +101,37 @@ function Modal({ setIsOpen }) {
                 <RiCloseLine style={{ marginBottom: '-3px' }} />
               </button>
               <div>
-                <label className="modalContentLabel" htmlFor="">
+                <label className="modalContentLabel" htmlFor="amount">
                   Amount:
+                  <input
+                    id="amount"
+                    name="amount"
+                    className="modalContentsInput"
+                    placeholder="Please enter amount"
+                    type="number"
+                  />
                 </label>
-                <input
-                  name="amount"
-                  className="modalContentsInput"
-                  placeholder="Please enter amount"
-                  type="number"
-                />
               </div>
               <div className="modalContentContainer">
                 <div>
-                  <label htmlFor="">From:</label>
-                  <select name="fromCurrency" id="">
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="XAF">XAF</option>
-                  </select>
+                  <label htmlFor="from">
+                    From:
+                    <select name="fromCurrency" id="from">
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="XAF">XAF</option>
+                    </select>
+                  </label>
                 </div>
                 <div>
-                  <label htmlFor="">To:</label>
-                  <select name="toCurrency" id="">
-                    <option value="EUR">EUR</option>
-                    <option value="USD">USD</option>
-                    <option value="XAF">XAF</option>
-                  </select>
+                  <label htmlFor="to">
+                    To:
+                    <select name="toCurrency" id="to">
+                      <option value="EUR">EUR</option>
+                      <option value="USD">USD</option>
+                      <option value="XAF">XAF</option>
+                    </select>
+                  </label>
                 </div>
               </div>
             </div>

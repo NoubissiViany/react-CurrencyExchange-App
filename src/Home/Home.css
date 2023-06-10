@@ -29,7 +29,6 @@ body {
 
 .Home__column1 span {
   font-weight: bold;
- 
 }
 
 .Home__column1__p2 {
@@ -45,7 +44,7 @@ body {
 }
 
 .Home__column2 h3 {
-  text-shadow: 1px 0.5px 0.1px gray
+  text-shadow: 1px 0.5px 0.1px gray;
 }
 
 .Home__column2 p {
@@ -55,21 +54,22 @@ body {
 .Home__column2__Currency {
   margin-top: 30px;
   display: flex;
-  gap: 10px;
+  justify-content: center;
 }
 
-.Home__column2__Currency  label {
+.Home__column2__Currency label {
   font-weight: bold;
   font-size: 18px;
-  text-shadow: 1px 0.5px 0.1px rgba(128, 128, 128, 0.473)
+  text-shadow: 1px 0.5px 0.1px rgba(128, 128, 128, 0.473);
 }
 
 .Home__column2__Currency select {
   border: none;
   border-radius: 2px;
   padding: 5px;
-  width: 50%;
+  width: 72%;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .Home__btn {
